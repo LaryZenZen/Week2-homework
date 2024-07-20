@@ -1,5 +1,7 @@
 body {
     font-family: "Bruno Ace SC", sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 
@@ -115,12 +117,6 @@ header {
 }
 
 
-/* 當intro下了d-flex之後，.intro-name寬度不會隨著復元素撐開 */
-
-
-/* 第三個li設定寬度是對的嗎 */
-
-
 /* main開始 */
 
 .banner {
@@ -158,10 +154,6 @@ header {
 .intro-content-img img:last-child {
     margin-right: 0;
 }
-
-
-/* 課前最終作業二其實也有遇到一樣的問題，就是在寬度是1296px的情況下，.intro-content設定寬度是526px，.intro-list-img設定寬度是770px並且使用justify-content:flex-end，為甚麼這兩個區塊的間距就會變成24呢?
-我看我.intro-list-img最右邊的圖片並沒有對齊最右邊 */
 
 .about {
     padding-top: 160px;
@@ -230,9 +222,6 @@ header {
     margin-right: 0;
 }
 
-
-/* contact me無法在同一行 */
-
 .project {
     margin-bottom: 160px;
 }
@@ -242,14 +231,6 @@ header {
     margin-top: 160px;
     margin-bottom: 16px;
 }
-
-
-/* .project-title要在那個位置是一定要寫寬度嗎? */
-
-
-/* .project-content-logo裡面的兩張圖片為甚麼一開始會有6px的間隔呢?
-是因為我的img預設是    vertical-align: middle;  嗎?
-我試了一下，我下display:flex就會不見，不知道為甚麼 */
 
 .project-content-detail {
     margin-bottom: 28px;
