@@ -1,0 +1,280 @@
+body {
+    font-family: "Bruno Ace SC", sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+
+/* 全域設定 */
+
+.container {
+    width: 1296px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 64px;
+    line-height: 1.5;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 64px;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* 工具設定 */
+
+.d-flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.mr-3 {
+    margin-right: 24px;
+}
+
+.ml-1 {
+    margin-left: 4px;
+}
+
+.mt-auto {
+    margin-top: auto;
+}
+
+.border-radius {
+    width: 185px;
+    border-radius: 32px;
+}
+
+
+/* header 開始 */
+
+header {
+    background-color: #000;
+}
+
+.header-nav {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.header-nav a {
+    color: #D1D1D1;
+    padding-top: 52px;
+    padding-bottom: 52px;
+}
+
+.header-nav li:nth-child(3) {
+    width: 278.5px;
+}
+
+.logo {
+    margin: 72px 24px 32px 0;
+}
+
+.intro-name-design {
+    font-size: 128px;
+    line-height: 1.5;
+    color: #00FFA3;
+    text-align: right;
+}
+
+.intro-name-contact {
+    background-color: #fff;
+}
+
+.intro-name-contact a {
+    display: block;
+    color: #000000;
+    padding: 12px 24px;
+    text-align: center;
+}
+
+
+/* 當intro下了d-flex之後，.intro-name寬度不會隨著復元素撐開 */
+
+
+/* 第三個li設定寬度是對的嗎 */
+
+
+/* main開始 */
+
+.banner {
+    background-image: url(/img/background-img.png);
+    background-size: cover;
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+
+.intro-content {
+    width: 526px;
+}
+
+.intro-content h2 {
+    color: white;
+    margin-bottom: 36px;
+}
+
+.intro-content p {
+    font-size: 24px;
+    line-height: 1.5;
+    color: white;
+    margin-bottom: 32px;
+}
+
+.intro-list-img {
+    width: 770px;
+    justify-content: flex-end;
+}
+
+.intro-content-img img {
+    margin-right: 16px;
+}
+
+.intro-content-img img:last-child {
+    margin-right: 0;
+}
+
+
+/* 課前最終作業二其實也有遇到一樣的問題，就是在寬度是1296px的情況下，.intro-content設定寬度是526px，.intro-list-img設定寬度是770px並且使用justify-content:flex-end，為甚麼這兩個區塊的間距就會變成24呢?
+我看我.intro-list-img最右邊的圖片並沒有對齊最右邊 */
+
+.about {
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+
+.about-list {
+    width: 636px;
+    padding-top: 46px;
+    padding-bottom: 46px;
+}
+
+.col {
+    width: 306px;
+    border: 1px solid #E3E3E3;
+    padding: 16px;
+}
+
+.col li {
+    margin-bottom: 4px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.col li:last-child {
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.col-mb {
+    margin-bottom: 24px;
+}
+
+.about-content {
+    width: 660px;
+    padding-left: 134px;
+}
+
+.about-title {
+    margin-bottom: 36px;
+}
+
+.about-body {
+    font-size: 24px;
+    line-height: 1.5;
+    color: #15161D;
+}
+
+.contact {
+    background: linear-gradient(#050014, #01021EE3);
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.contact-title {
+    color: #fff;
+    margin-right: 16px;
+}
+
+.contact-list li {
+    margin-right: 20px;
+}
+
+.contact-list li:last-child {
+    margin-right: 0;
+}
+
+
+/* contact me無法在同一行 */
+
+.project {
+    margin-bottom: 160px;
+}
+
+.project-title {
+    width: 746px;
+    margin-top: 160px;
+    margin-bottom: 16px;
+}
+
+
+/* .project-title要在那個位置是一定要寫寬度嗎? */
+
+
+/* .project-content-logo裡面的兩張圖片為甚麼一開始會有6px的間隔呢?
+是因為我的img預設是    vertical-align: middle;  嗎?
+我試了一下，我下display:flex就會不見，不知道為甚麼 */
+
+.project-content-detail {
+    margin-bottom: 28px;
+}
+
+.project-body-link {
+    background: #000000;
+    text-align: center;
+}
+
+.project-body-link a {
+    display: block;
+    padding: 12px 24px;
+    color: #fff;
+}
+
+
+/* footer */
+
+.footer {
+    background-color: #000000;
+    padding: 40px 0;
+}
+
+h3 {
+    color: #fff;
+    text-align: center;
+}
