@@ -120,7 +120,7 @@ header {
 /* main開始 */
 
 .banner {
-    background-image: url(img/background-img.png);
+    background-image: url(../img/background-img.png);
     background-size: cover;
     padding-top: 160px;
     padding-bottom: 160px;
